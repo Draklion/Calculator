@@ -74,23 +74,39 @@ def single_click():
 
     if create_rb_number.get() == 1 and create_rb_operation.get() == 1:
         label1['text'] = f"{m_sum.Sum(int(value1),int(value2),0,0,1)}"
+        log.sum_logger(f"{value1},{value2},0,0,1\n")
+
     elif create_rb_number.get() == 2 and create_rb_operation.get() == 1:
         label1['text'] = f"{m_sum.Sum(int(value1),int(value2),int(value3),int(value4),2)}"
+        log.sum_logger(f"{value1},{value2},{value3},{value4},2\n")
 
     elif create_rb_number.get() == 1 and create_rb_operation.get() == 2:
         label1['text'] = f"{m_sub.Subtraction(int(value1),int(value2),0,0,1)}"
+        log.sub_logger(f"{value1},{value2},0,0,1\n")
+
     elif create_rb_number.get() == 2 and create_rb_operation.get() == 2:
         label1['text'] = f"{m_sub.Subtraction(int(value1),int(value2),int(value3),int(value4),2)}"
+        log.sub_logger(f"{value1},{value2},{value3},{value4},2\n")
 
     elif create_rb_number.get() == 1 and create_rb_operation.get() == 3:
         label1['text'] = f"{m_mult.Multiplication(int(value1),int(value2),0,0,1)}"
+        log.mult_logger(f"{value1},{value2},0,0,1\n")
+
     elif create_rb_number.get() == 2 and create_rb_operation.get() == 3:
         label1['text'] = f"{m_mult.Multiplication(int(value1),int(value2),int(value3),int(value4),2)}"
+        log.mult_logger(f"{value1},{value2},{value3},{value4},2\n")
 
     elif create_rb_number.get() == 1 and create_rb_operation.get() == 4:
         label1['text'] = f"{m_div.Division(int(value1),int(value2),0,0,1)}"
+        log.div_logger(f"{value1},{value2},0,0,1\n")
+
     elif create_rb_number.get() == 2 and create_rb_operation.get() == 4:
         label1['text'] = f"{m_div.Division(int(value1),int(value2),int(value3),int(value4),2)}"
+        log.div_logger(f"{value1},{value2},{value3},{value4},2\n")
+
+    elif create_rb_number.get() == 1 and create_rb_operation.get() == 5:
+        label1['text'] = f"{m_div.Division(int(value1),int(value2),0,0,3)}"
+        log.div_logger(f"{value1},{value2},0,0,1\n")
 
     else:
         label1['text'] = "Некорректное значение ввода"
