@@ -1,6 +1,6 @@
-def Subtraction(reduced, deductible, key):
-    dictonary = {
-        1: f"{reduced-deductible}",
-        2: f"{reduced+deductible}i"
+def Subtraction(reduced1, deductible1, reduced2, deductible2, key):
+    dictionary = {
+        1: f"{reduced1-deductible1}",
+        2: f"{complex(reduced1,deductible1)-complex(reduced2, deductible2)}".replace('(', '').replace(')', '')
     }
-    return
+    return dictionary[key]

@@ -1,7 +1,6 @@
-def Division(divisible, divider, key):
-
+def Division(divisible1, divider1, divisible2, divider2, key):
     dictionary = {
-        1: divisible/divider,
-        2: divisible % divider
+        1: f"{divisible1/divider1}",
+        2: f"{complex(divisible1, divider1)/complex(divisible2, divider2)}".replace('(', '').replace(')', '')
     }
-    return
+    return dictionary[key]
