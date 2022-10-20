@@ -29,3 +29,11 @@
 01:04, subtraction, 10,3,0,0,1
 01:04, multiplication, 10,3,0,0,1
 01:04, division, 10,3,0,0,1
+01:05, sum, 10,10,0,0,1
+01:05, subtraction, 10,10,0,0,1
+01:05, multiplication, 10,10,0,0,1
+01:05, division, 10,10,0,0,1
+01:05, division, 10,10,0,0,1
+01:05, sum, 10,10,10,10,2
+01:05, subtraction, 10,10,10,10,2
+01:05, multiplication, 10,10,10,10,2
